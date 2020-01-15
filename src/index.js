@@ -1,10 +1,11 @@
 const express = require('express');
-
+const utils = require('./utils/utils');
+const routes = require('./routes');
+const mongoose = require('mongoose');
 const app = express();
 
-app.get('/',(req,resp) => {
-    console.log("Hello World");
-    return resp.json({message: "Hello World"});
-});
+mongoose.connect(utils.getDatabaseURI(), utils.getDatabaseOptions());
+app.use(express.json());
+app.use(routes);
 
 app.listen(8080);

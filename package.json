@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon -r dotenv/config ./src/index.js"
   },
   "repository": "https://github.com/mgiatti/dev-radar-backend.git",
   "author": "mgiatti <mb.giatti@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "4.17.1"
+    "axios": "^0.19.1",
+    "express": "4.17.1",
+    "mongoose": "5.8.7"
   },
   "devDependencies": {
+    "dotenv": "8.2.0",
     "nodemon": "2.0.2"
   }
 }
