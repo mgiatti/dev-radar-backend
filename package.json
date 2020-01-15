@@ -2,11 +2,16 @@
   "name": "dev-radar-backend",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
   "repository": "https://github.com/mgiatti/dev-radar-backend.git",
   "author": "mgiatti <mb.giatti@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
     "nodemon": "2.0.2"
   }
 }

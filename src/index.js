@@ -1,2 +1,10 @@
 const express = require('express');
-console.log("Hello World");
+
+const app = express();
+
+app.get('/',(req,resp) => {
+    console.log("Hello World");
+    return resp.json({message: "Hello World"});
+});
+
+app.listen(8080);
