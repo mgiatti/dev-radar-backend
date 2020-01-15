@@ -3,7 +3,7 @@ function getDatabaseURI(){
         dbAdminPassword = process.env.DB_ADMIN_PASSWORD,
         dbName = process.env.DB_NAME, 
         dbHost = process.env.DB_HOST, 
-        dbPort = process.env.DB_PORT, 
+        //dbPort = process.env.DB_PORT, 
         dbPrefix = process.env.DB_PREFIX;
     return `${dbPrefix}://${dbAdminUsername}:${dbAdminPassword}@${dbHost}/${dbName}?retryWrites=true&w=majority`;
 }
