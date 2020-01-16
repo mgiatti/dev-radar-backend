@@ -14,14 +14,5 @@ function getDatabaseOptions(){
         useUnifiedTopology: true
     }
 }
-
-function getGithubApiUsersURI(userName){
-    return getGithubApiPath(`users/${userName}`);
-}
-
-function getGithubApiPath(relativePath){
-    const githubApiUrl = process.env.GITHUB_API;
-    return `${githubApiUrl}/${relativePath}`;
-}
  
-module.exports = { getDatabaseURI, getDatabaseOptions, getGithubApiUsersURI };
+module.exports = { getDatabaseURI, getDatabaseOptions };

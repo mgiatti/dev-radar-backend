@@ -1,10 +1,10 @@
 const express = require('express');
-const utils = require('./utils/utils');
+const databaseUtils = require('./utils/databaseUtils');
 const routes = require('./routes');
 const mongoose = require('mongoose');
 const app = express();
 
-mongoose.connect(utils.getDatabaseURI(), utils.getDatabaseOptions());
+mongoose.connect(databaseUtils.getDatabaseURI(), databaseUtils.getDatabaseOptions());
 app.use(express.json());
 app.use(routes);
 
