@@ -2,7 +2,9 @@
 Application based on Omnistack 10 
 
 - The main technologies used are : Nodejs , React and React Native
-- This repository covers backend only. For the front end part please access - [dev-radar-frontend](https://github.com/mgiatti/dev-radar-frontend)
+- This repository covers backend only. 
+  <br> For the frontend part please access - [dev-radar-frontend](https://github.com/mgiatti/dev-radar-frontend)
+  <br> For the mobile part please access - [dev-radar-mobile](https://github.com/mgiatti/dev-radar-mobile)
 
 # important
 to get things work you should create a .env file in the root of your project with the following parameters:
